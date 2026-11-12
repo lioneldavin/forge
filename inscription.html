@@ -11,23 +11,73 @@
   </head>
     
   <body>
-  <main class="fr-container fr-py-4w" id="content" role="main">
+ <main class="fr-container fr-py-4w" id="content" role="main">
   <div class="fr-grid-row fr-grid-row--center">
     <div class="fr-col-12 fr-col-md-8 fr-col-lg-6">
-
-      <!-- ======================================================= -->
-      <!-- PARCOURS 1 : L'USAGER EST PARTICIPANT (5 étapes)        -->
-      <!-- ======================================================= -->
       
       <div class="fr-callout fr-mb-6w">
         <h3 class="fr-callout__title">Parcours 1 : Je participe à la formation</h3>
         <p class="fr-callout__text"></p>
       </div>
 
-      <!-- Étape 1 : Profil (Variante Participant) -->
       <div class="fr-stepper fr-mb-3w">
-        <h2 class="fr-stepper__title">Votre profil <span class="fr-stepper__state">Étape 1 sur 5</span></h2>
-        <div class="fr-stepper__steps" data-fr-current-step="1" data-fr-steps="5"></div>
+        <h2 class="fr-stepper__title">Choix de dates <span class="fr-stepper__state">Étape 1 sur 6</span></h2>
+        <div class="fr-stepper__steps" data-fr-current-step="1" data-fr-steps="6"></div>
+        <p class="fr-stepper__details"><span class="fr-text--bold">Étape suivante :</span> Votre profil</p>
+      </div>
+
+      <div class="form-step">
+        <div class="fr-select-group fr-mb-4w">
+          <label class="fr-label" for="p1-formation-select">Formation choisie</label>
+          <select class="fr-select" id="p1-formation-select" disabled>
+            <option value="qvct" selected>Piloter une démarche QVCT</option>
+          </select>
+        </div>
+
+        <fieldset class="fr-fieldset fr-mb-4w">
+          <legend class="fr-fieldset__legend--regular fr-fieldset__legend">Date souhaitée :</legend>
+          
+          <div class="fr-fieldset__element">
+            <div class="fr-radio-group">
+              <input type="radio" id="p1-session-1" name="p1-session" checked>
+              <label class="fr-label" for="p1-session-1">18 et 19 novembre 2026 à Lille</label>
+            </div>
+          </div>
+
+          <div class="fr-fieldset__element">
+            <div class="fr-radio-group">
+              <input type="radio" id="p1-session-2" name="p1-session">
+              <label class="fr-label" for="p1-session-2">19 et 20 novembre 2026 à Clermont-Ferrand</label>
+            </div>
+          </div>
+
+          <div class="fr-fieldset__element">
+            <div class="fr-radio-group">
+              <input type="radio" id="p1-session-3" name="p1-session">
+              <label class="fr-label" for="p1-session-3">19 et 20 novembre 2026 à Rennes</label>
+            </div>
+          </div>
+
+          <div class="fr-fieldset__element">
+            <div class="fr-radio-group">
+              <input type="radio" id="p1-session-4" name="p1-session">
+              <label class="fr-label" for="p1-session-4">30 novembre et 1er décembre 2026 à Aix-en-Provence</label>
+            </div>
+          </div>
+        </fieldset>
+
+        <ul class="fr-btns-group fr-btns-group--right fr-btns-group--inline fr-mt-4w">
+          <li>
+            <button class="fr-btn" type="button">Valider cette étape</button>
+          </li>
+        </ul>
+      </div>
+
+      <hr class="fr-hr fr-my-8w">
+
+      <div class="fr-stepper fr-mb-3w">
+        <h2 class="fr-stepper__title">Votre profil <span class="fr-stepper__state">Étape 2 sur 6</span></h2>
+        <div class="fr-stepper__steps" data-fr-current-step="2" data-fr-steps="6"></div>
         <p class="fr-stepper__details"><span class="fr-text--bold">Étape suivante :</span> Participant</p>
       </div>
 
@@ -50,6 +100,9 @@
 
         <ul class="fr-btns-group fr-btns-group--right fr-btns-group--inline fr-mt-4w">
           <li>
+            <button class="fr-btn fr-btn--secondary" type="button">Étape précédente</button>
+          </li>
+          <li>
             <button class="fr-btn" type="button">Valider cette étape</button>
           </li>
         </ul>
@@ -57,10 +110,9 @@
 
       <hr class="fr-hr fr-my-8w">
 
-      <!-- Étape 2 : Participant -->
       <div class="fr-stepper fr-mb-3w">
-        <h2 class="fr-stepper__title">Participant <span class="fr-stepper__state">Étape 2 sur 5</span></h2>
-        <div class="fr-stepper__steps" data-fr-current-step="2" data-fr-steps="5"></div>
+        <h2 class="fr-stepper__title">Participant <span class="fr-stepper__state">Étape 3 sur 6</span></h2>
+        <div class="fr-stepper__steps" data-fr-current-step="3" data-fr-steps="6"></div>
         <p class="fr-stepper__details"><span class="fr-text--bold">Étape suivante :</span> Société</p>
       </div>
 
@@ -102,10 +154,9 @@
 
       <hr class="fr-hr fr-my-8w">
 
-      <!-- Étape 3 : Société (Anact - Validée) -->
       <div class="fr-stepper fr-mb-3w">
-        <h2 class="fr-stepper__title">Société <span class="fr-stepper__state">Étape 3 sur 5</span></h2>
-        <div class="fr-stepper__steps" data-fr-current-step="3" data-fr-steps="5"></div>
+        <h2 class="fr-stepper__title">Société <span class="fr-stepper__state">Étape 4 sur 6</span></h2>
+        <div class="fr-stepper__steps" data-fr-current-step="4" data-fr-steps="6"></div>
         <p class="fr-stepper__details"><span class="fr-text--bold">Étape suivante :</span> Message</p>
       </div>
 
@@ -222,10 +273,9 @@
 
       <hr class="fr-hr fr-my-8w">
 
-      <!-- Étape 4 : Message -->
       <div class="fr-stepper fr-mb-3w">
-        <h2 class="fr-stepper__title">Message <span class="fr-stepper__state">Étape 4 sur 5</span></h2>
-        <div class="fr-stepper__steps" data-fr-current-step="4" data-fr-steps="5"></div>
+        <h2 class="fr-stepper__title">Message <span class="fr-stepper__state">Étape 5 sur 6</span></h2>
+        <div class="fr-stepper__steps" data-fr-current-step="5" data-fr-steps="6"></div>
         <p class="fr-stepper__details"><span class="fr-text--bold">Étape suivante :</span> Synthèse et validation</p>
       </div>
 
@@ -254,16 +304,23 @@
 
       <hr class="fr-hr fr-my-8w">
 
-      <!-- Étape 5 : Synthèse (Parcours 1) -->
       <div class="fr-stepper fr-mb-3w">
-        <h2 class="fr-stepper__title">Synthèse et validation <span class="fr-stepper__state">Étape 5 sur 5</span></h2>
-        <div class="fr-stepper__steps" data-fr-current-step="5" data-fr-steps="5"></div>
+        <h2 class="fr-stepper__title">Synthèse et validation <span class="fr-stepper__state">Étape 6 sur 6</span></h2>
+        <div class="fr-stepper__steps" data-fr-current-step="6" data-fr-steps="6"></div>
         <p class="fr-stepper__details"><span class="fr-text--bold">Fin du parcours</span></p>
       </div>
 
       <div class="form-step fr-mb-12w">
         
-        <!-- Bloc Récapitulatif Participant -->
+        <div class="fr-card fr-mb-3w fr-p-3w" style="box-shadow: inset 0 0 0 1px #dddddd;">
+          <h4 class="fr-h6 fr-mb-2w">Session choisie</h4>
+          <p class="fr-text--sm fr-mb-3w">
+            Formation : <span class="fr-text--bold">Piloter une démarche QVCT</span><br>
+            Session : <span class="fr-text--bold">18 et 19 novembre 2026 à Lille</span>
+          </p>
+          <button type="button" class="fr-btn fr-btn--sm fr-icon-pencil-line fr-btn--icon-left fr-btn--secondary">MODIFIER</button>
+        </div>
+
         <div class="fr-card fr-mb-3w fr-p-3w" style="box-shadow: inset 0 0 0 1px #dddddd;">
           <h4 class="fr-h6 fr-mb-2w">Participant</h4>
           <p class="fr-text--sm fr-mb-3w">
@@ -274,7 +331,6 @@
           <button type="button" class="fr-btn fr-btn--sm fr-icon-pencil-line fr-btn--icon-left fr-btn--secondary">MODIFIER</button>
         </div>
 
-        <!-- Bloc Récapitulatif Société -->
         <div class="fr-card fr-mb-3w fr-p-3w" style="box-shadow: inset 0 0 0 1px #dddddd;">
           <h4 class="fr-h6 fr-mb-2w">Société</h4>
           <p class="fr-text--sm fr-mb-3w">
@@ -285,7 +341,6 @@
           <button type="button" class="fr-btn fr-btn--sm fr-icon-pencil-line fr-btn--icon-left fr-btn--secondary">MODIFIER</button>
         </div>
 
-        <!-- Bloc Récapitulatif Message -->
         <div class="fr-card fr-mb-4w fr-p-3w" style="box-shadow: inset 0 0 0 1px #dddddd;">
           <h4 class="fr-h6 fr-mb-2w">Message</h4>
           <p class="fr-text--sm fr-mb-3w">
@@ -294,7 +349,6 @@
           <button type="button" class="fr-btn fr-btn--sm fr-icon-pencil-line fr-btn--icon-left fr-btn--secondary">MODIFIER</button>
         </div>
 
-        <!-- Interrupteurs de consentement (désactivés par défaut) -->
         <fieldset class="fr-fieldset" id="toggle-group-1" aria-labelledby="toggle-group-1-legend toggle-group-1-messages">
           <legend class="fr-fieldset__legend" id="toggle-group-1-legend"> Consentements nécessaires à la bonne réalisation du service </legend>
           <div class="fr-fieldset__element">
@@ -325,7 +379,6 @@
           <div class="fr-messages-group" id="toggle-group-1-messages" aria-live="polite"></div>
         </fieldset>
 
-        <!-- Boutons de navigation finaux -->
         <ul class="fr-btns-group fr-btns-group--right fr-btns-group--inline fr-mt-4w">
           <li>
             <button class="fr-btn fr-btn--secondary" type="button">Étape précédente</button>
@@ -338,20 +391,69 @@
 
       <hr class="fr-hr fr-my-8w">
 
-
-      <!-- ======================================================= -->
-      <!-- PARCOURS 2 : L'USAGER EST RESPONSABLE (6 étapes)        -->
-      <!-- ======================================================= -->
-
       <div class="fr-callout fr-mb-6w">
         <h3 class="fr-callout__title">Parcours 2 : Je suis responsable de l'inscription</h3>
         <p class="fr-callout__text"></p>
       </div>
 
-      <!-- Étape 1 : Profil (Variante Responsable) -->
       <div class="fr-stepper fr-mb-3w">
-        <h2 class="fr-stepper__title">Votre profil <span class="fr-stepper__state">Étape 1 sur 6</span></h2>
-        <div class="fr-stepper__steps" data-fr-current-step="1" data-fr-steps="6"></div>
+        <h2 class="fr-stepper__title">Choix de dates <span class="fr-stepper__state">Étape 1 sur 7</span></h2>
+        <div class="fr-stepper__steps" data-fr-current-step="1" data-fr-steps="7"></div>
+        <p class="fr-stepper__details"><span class="fr-text--bold">Étape suivante :</span> Votre profil</p>
+      </div>
+
+      <div class="form-step">
+        <div class="fr-select-group fr-mb-4w">
+          <label class="fr-label" for="p2-formation-select">Formation choisie</label>
+          <select class="fr-select" id="p2-formation-select" disabled>
+            <option value="qvct" selected>Piloter une démarche QVCT</option>
+          </select>
+        </div>
+
+        <fieldset class="fr-fieldset fr-mb-4w">
+          <legend class="fr-fieldset__legend--regular fr-fieldset__legend">Date souhaitée :</legend>
+          
+          <div class="fr-fieldset__element">
+            <div class="fr-radio-group">
+              <input type="radio" id="p2-session-1" name="p2-session" checked>
+              <label class="fr-label" for="p2-session-1">18 et 19 novembre 2026 à Lille</label>
+            </div>
+          </div>
+
+          <div class="fr-fieldset__element">
+            <div class="fr-radio-group">
+              <input type="radio" id="p2-session-2" name="p2-session">
+              <label class="fr-label" for="p2-session-2">19 et 20 novembre 2026 à Clermont-Ferrand</label>
+            </div>
+          </div>
+
+          <div class="fr-fieldset__element">
+            <div class="fr-radio-group">
+              <input type="radio" id="p2-session-3" name="p2-session">
+              <label class="fr-label" for="p2-session-3">19 et 20 novembre 2026 à Rennes</label>
+            </div>
+          </div>
+
+          <div class="fr-fieldset__element">
+            <div class="fr-radio-group">
+              <input type="radio" id="p2-session-4" name="p2-session">
+              <label class="fr-label" for="p2-session-4">30 novembre et 1er décembre 2026 à Aix-en-Provence</label>
+            </div>
+          </div>
+        </fieldset>
+
+        <ul class="fr-btns-group fr-btns-group--right fr-btns-group--inline fr-mt-4w">
+          <li>
+            <button class="fr-btn" type="button">Valider cette étape</button>
+          </li>
+        </ul>
+      </div>
+
+      <hr class="fr-hr fr-my-8w">
+
+      <div class="fr-stepper fr-mb-3w">
+        <h2 class="fr-stepper__title">Votre profil <span class="fr-stepper__state">Étape 2 sur 7</span></h2>
+        <div class="fr-stepper__steps" data-fr-current-step="2" data-fr-steps="7"></div>
         <p class="fr-stepper__details"><span class="fr-text--bold">Étape suivante :</span> Responsable de l'inscription</p>
       </div>
 
@@ -374,6 +476,9 @@
 
         <ul class="fr-btns-group fr-btns-group--right fr-btns-group--inline fr-mt-4w">
           <li>
+            <button class="fr-btn fr-btn--secondary" type="button">Étape précédente</button>
+          </li>
+          <li>
             <button class="fr-btn" type="button">Valider cette étape</button>
           </li>
         </ul>
@@ -381,10 +486,9 @@
 
       <hr class="fr-hr fr-my-8w">
 
-      <!-- Étape 2 : Responsable -->
       <div class="fr-stepper fr-mb-3w">
-        <h2 class="fr-stepper__title">Responsable de l'inscription <span class="fr-stepper__state">Étape 2 sur 6</span></h2>
-        <div class="fr-stepper__steps" data-fr-current-step="2" data-fr-steps="6"></div>
+        <h2 class="fr-stepper__title">Responsable de l'inscription <span class="fr-stepper__state">Étape 3 sur 7</span></h2>
+        <div class="fr-stepper__steps" data-fr-current-step="3" data-fr-steps="7"></div>
         <p class="fr-stepper__details"><span class="fr-text--bold">Étape suivante :</span> Participant(s)</p>
       </div>
 
@@ -425,10 +529,9 @@
 
       <hr class="fr-hr fr-my-8w">
 
-      <!-- Étape 3 : Participant(s) avec ajout par adresse électronique et cartes individuelles -->
       <div class="fr-stepper fr-mb-3w">
-        <h2 class="fr-stepper__title">Participant(s) <span class="fr-stepper__state">Étape 3 sur 6</span></h2>
-        <div class="fr-stepper__steps" data-fr-current-step="3" data-fr-steps="6"></div>
+        <h2 class="fr-stepper__title">Participant(s) <span class="fr-stepper__state">Étape 4 sur 7</span></h2>
+        <div class="fr-stepper__steps" data-fr-current-step="4" data-fr-steps="7"></div>
         <p class="fr-stepper__details"><span class="fr-text--bold">Étape suivante :</span> Société</p>
       </div>
 
@@ -436,7 +539,6 @@
         <fieldset class="fr-fieldset">
           <legend class="fr-fieldset__legend--regular fr-fieldset__legend">Ajouter des participants</legend>
 
-          <!-- Champ de saisie adresse électronique + Bouton Ajouter -->
           <div class="fr-fieldset__element">
             <div class="fr-grid-row fr-grid-row--gutters fr-grid-row--bottom">
               <div class="fr-col-12 fr-col-md-8">
@@ -451,11 +553,9 @@
             </div>
           </div>
 
-          <!-- Liste des participants ajoutés (sous forme de cartes individuelles) -->
           <div class="fr-fieldset__element fr-mt-4w">
             <h4 class="fr-h6 fr-mb-3w">Participants ajoutés (2)</h4>
 
-            <!-- Carte Participant 1 : Jean Dupont -->
             <div class="fr-card fr-mb-3w fr-p-3w" style="box-shadow: inset 0 0 0 1px #dddddd;">
               <h5 class="fr-h6 fr-mb-2w">Participant 1 : Jean Dupont</h5>
               <p class="fr-text--sm fr-mb-3w">
@@ -470,7 +570,6 @@
               </div>
             </div>
 
-            <!-- Carte Participant 2 : Sophie Laurent -->
             <div class="fr-card fr-mb-3w fr-p-3w" style="box-shadow: inset 0 0 0 1px #dddddd;">
               <h5 class="fr-h6 fr-mb-2w">Participant 2 : Sophie Laurent</h5>
               <p class="fr-text--sm fr-mb-3w">
@@ -501,10 +600,9 @@
 
       <hr class="fr-hr fr-my-8w">
 
-      <!-- Étape 4 : Société (Anact - Validée) -->
       <div class="fr-stepper fr-mb-3w">
-        <h2 class="fr-stepper__title">Société <span class="fr-stepper__state">Étape 4 sur 6</span></h2>
-        <div class="fr-stepper__steps" data-fr-current-step="4" data-fr-steps="6"></div>
+        <h2 class="fr-stepper__title">Société <span class="fr-stepper__state">Étape 5 sur 7</span></h2>
+        <div class="fr-stepper__steps" data-fr-current-step="5" data-fr-steps="7"></div>
         <p class="fr-stepper__details"><span class="fr-text--bold">Étape suivante :</span> Message</p>
       </div>
 
@@ -621,10 +719,9 @@
 
       <hr class="fr-hr fr-my-8w">
 
-      <!-- Étape 5 : Message -->
       <div class="fr-stepper fr-mb-3w">
-        <h2 class="fr-stepper__title">Message <span class="fr-stepper__state">Étape 5 sur 6</span></h2>
-        <div class="fr-stepper__steps" data-fr-current-step="5" data-fr-steps="6"></div>
+        <h2 class="fr-stepper__title">Message <span class="fr-stepper__state">Étape 6 sur 7</span></h2>
+        <div class="fr-stepper__steps" data-fr-current-step="6" data-fr-steps="7"></div>
         <p class="fr-stepper__details"><span class="fr-text--bold">Étape suivante :</span> Synthèse</p>
       </div>
 
@@ -653,16 +750,23 @@
 
       <hr class="fr-hr fr-my-8w">
 
-      <!-- Étape 6 : Synthèse (Parcours 2) -->
       <div class="fr-stepper fr-mb-3w">
-        <h2 class="fr-stepper__title">Synthèse <span class="fr-stepper__state">Étape 6 sur 6</span></h2>
-        <div class="fr-stepper__steps" data-fr-current-step="6" data-fr-steps="6"></div>
+        <h2 class="fr-stepper__title">Synthèse <span class="fr-stepper__state">Étape 7 sur 7</span></h2>
+        <div class="fr-stepper__steps" data-fr-current-step="7" data-fr-steps="7"></div>
         <p class="fr-stepper__details"><span class="fr-text--bold">Fin du parcours</span></p>
       </div>
 
       <div class="form-step">
         
-        <!-- Bloc Récapitulatif Responsable -->
+        <div class="fr-card fr-mb-3w fr-p-3w" style="box-shadow: inset 0 0 0 1px #dddddd;">
+          <h4 class="fr-h6 fr-mb-2w">Session choisie</h4>
+          <p class="fr-text--sm fr-mb-3w">
+            Formation : <span class="fr-text--bold">Piloter une démarche QVCT</span><br>
+            Session : <span class="fr-text--bold">18 et 19 novembre 2026 à Lille</span>
+          </p>
+          <button type="button" class="fr-btn fr-btn--sm fr-icon-pencil-line fr-btn--icon-left fr-btn--secondary">MODIFIER</button>
+        </div>
+
         <div class="fr-card fr-mb-3w fr-p-3w" style="box-shadow: inset 0 0 0 1px #dddddd;">
           <h4 class="fr-h6 fr-mb-2w">Responsable</h4>
           <p class="fr-text--sm fr-mb-3w">
@@ -674,7 +778,6 @@
           <button type="button" class="fr-btn fr-btn--sm fr-icon-pencil-line fr-btn--icon-left fr-btn--secondary">MODIFIER</button>
         </div>
 
-        <!-- Bloc Récapitulatif Participant 1 -->
         <div class="fr-card fr-mb-3w fr-p-3w" style="box-shadow: inset 0 0 0 1px #dddddd;">
           <h4 class="fr-h6 fr-mb-2w">Participant 1</h4>
           <p class="fr-text--sm fr-mb-3w">
@@ -686,7 +789,6 @@
           <button type="button" class="fr-btn fr-btn--sm fr-icon-pencil-line fr-btn--icon-left fr-btn--secondary">MODIFIER</button>
         </div>
 
-        <!-- Bloc Récapitulatif Participant 2 -->
         <div class="fr-card fr-mb-3w fr-p-3w" style="box-shadow: inset 0 0 0 1px #dddddd;">
           <h4 class="fr-h6 fr-mb-2w">Participant 2</h4>
           <p class="fr-text--sm fr-mb-3w">
@@ -698,7 +800,6 @@
           <button type="button" class="fr-btn fr-btn--sm fr-icon-pencil-line fr-btn--icon-left fr-btn--secondary">MODIFIER</button>
         </div>
 
-        <!-- Bloc Récapitulatif Société -->
         <div class="fr-card fr-mb-3w fr-p-3w" style="box-shadow: inset 0 0 0 1px #dddddd;">
           <h4 class="fr-h6 fr-mb-2w">Société</h4>
           <p class="fr-text--sm fr-mb-3w">
@@ -709,7 +810,6 @@
           <button type="button" class="fr-btn fr-btn--sm fr-icon-pencil-line fr-btn--icon-left fr-btn--secondary">MODIFIER</button>
         </div>
 
-        <!-- Bloc Récapitulatif Message -->
         <div class="fr-card fr-mb-4w fr-p-3w" style="box-shadow: inset 0 0 0 1px #dddddd;">
           <h4 class="fr-h6 fr-mb-2w">Message</h4>
           <p class="fr-text--sm fr-mb-3w">
@@ -718,7 +818,6 @@
           <button type="button" class="fr-btn fr-btn--sm fr-icon-pencil-line fr-btn--icon-left fr-btn--secondary">MODIFIER</button>
         </div>
 
-        <!-- Interrupteurs de consentement (désactivés par défaut) -->
         <fieldset class="fr-fieldset" id="toggle-group-2" aria-labelledby="toggle-group-2-legend toggle-group-2-messages">
           <legend class="fr-fieldset__legend" id="toggle-group-2-legend"> Consentements nécessaires à la bonne réalisation du service </legend>
           <div class="fr-fieldset__element">
@@ -749,7 +848,6 @@
           <div class="fr-messages-group" id="toggle-group-2-messages" aria-live="polite"></div>
         </fieldset>
 
-        <!-- Boutons de navigation finaux -->
         <ul class="fr-btns-group fr-btns-group--right fr-btns-group--inline fr-mt-4w">
           <li>
             <button class="fr-btn fr-btn--secondary" type="button">Étape précédente</button>
