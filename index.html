@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Inscription</title>
+    <base href="https://www.anact.fr"><link rel='stylesheet' href='https://main--ds-gouv.netlify.app/dist/dsfr.main.css'>
+<link rel='stylesheet' href='https://main--ds-gouv.netlify.app/dist/utility/utility.main.css'>
+<link rel='stylesheet' href='https://main--ds-gouv.netlify.app/dist/utility/icons/icons.min.css'>
+
+  </head>
+    
+  <body>
+  <main class="fr-container fr-py-4w" id="content" role="main">
+  <div class="fr-grid-row fr-grid-row--center">
+    <div class="fr-col-12 fr-col-md-8 fr-col-lg-6">
+
+      <!-- ======================================================= -->
+      <!-- PARCOURS 1 : L'USAGER EST PARTICIPANT (5 étapes)        -->
+      <!-- ======================================================= -->
+      
+      <div class="fr-callout fr-mb-6w">
+        <h3 class="fr-callout__title">Parcours 1 : Je participe à la formation</h3>
+        <p class="fr-callout__text"></p>
+      </div>
+
+      <!-- Étape 1 : Profil (Variante Participant) -->
+      <div class="fr-stepper fr-mb-3w">
+        <h2 class="fr-stepper__title">Votre profil <span class="fr-stepper__state">Étape 1 sur 5</span></h2>
+        <div class="fr-stepper__steps" data-fr-current-step="1" data-fr-steps="5"></div>
+        <p class="fr-stepper__details"><span class="fr-text--bold">Étape suivante :</span> Participant</p>
+      </div>
+
+      <div class="form-step">
+        <fieldset class="fr-fieldset">
+          <legend class="fr-fieldset__legend--regular fr-fieldset__legend">Vous êtes :</legend>
+          <div class="fr-fieldset__element">
+            <div class="fr-radio-group">
+              <input type="radio" id="p1-choice-1" name="p1-profile" checked>
+              <label class="fr-label" for="p1-choice-1">Je participe à la formation</label>
+            </div>
+          </div>
+          <div class="fr-fieldset__element">
+            <div class="fr-radio-group">
+              <input type="radio" id="p1-choice-2" name="p1-profile">
+              <label class="fr-label" for="p1-choice-2">Je suis responsable de l'inscription</label>
+            </div>
+          </div>
+        </fieldset>
+
+        <ul class="fr-btns-group fr-btns-group--right fr-btns-group--inline fr-mt-4w">
+          <li>
+            <button class="fr-btn" type="button">Valider cette étape</button>
+          </li>
+        </ul>
+      </div>
+
+      <hr class="fr-hr fr-my-8w">
+
+      <!-- Étape 2 : Participant -->
+      <div class="fr-stepper fr-mb-3w">
+        <h2 class="fr-stepper__title">Participant <span class="fr-stepper__state">Étape 2 sur 5</span></h2>
+        <div class="fr-stepper__steps" data-fr-current-step="2" data-fr-steps="5"></div>
+        <p class="fr-stepper__details"><span class="fr-text--bold">Étape suivante :</span> Société</p>
+      </div>
+
+      <div class="form-step">
+        <fieldset class="fr-fieldset">
+          <legend class="fr-fieldset__legend--regular fr-fieldset__legend">Vos informations de participant</legend>
+          
+          <div class="fr-fieldset__element">
+            <fieldset class="fr-fieldset fr-fieldset--inline">
+              <legend class="fr-fieldset__legend fr-fieldset__legend--regular">Sexe<span class="fr-required-marker"> *</span></legend>
+              <div class="fr-fieldset__element fr-fieldset__element--inline"><div class="fr-radio-group"><input type="radio" id="s1-h" name="s1" checked><label class="fr-label" for="s1-h">Homme</label></div></div>
+              <div class="fr-fieldset__element fr-fieldset__element--inline"><div class="fr-radio-group"><input type="radio" id="s1-f" name="s1"><label class="fr-label" for="s1-f">Femme</label></div></div>
+            </fieldset>
+          </div>
+
+          <div class="fr-fieldset__element"><div class="fr-input-group"><label class="fr-label" for="p-nom">Nom<span class="fr-required-marker"> *</span></label><input class="fr-input" type="text" id="p-nom" value="Martin" required></div></div>
+          <div class="fr-fieldset__element"><div class="fr-input-group"><label class="fr-label" for="p-prenom">Prénom<span class="fr-required-marker"> *</span></label><input class="fr-input" type="text" id="p-prenom" value="Alexandre" required></div></div>
+          
+          <div class="fr-fieldset__element">
+            <div class="fr-select-group">
+              <label class="fr-label" for="p-fonc">Choisissez une fonction<span class="fr-required-marker"> *</span></label>
+              <select class="fr-select" id="p-fonc" required><option value="Management" selected>Management</option></select>
+            </div>
+          </div>
+
+          <div class="fr-fieldset__element"><div class="fr-input-group"><label class="fr-label" for="p-mail">Adresse électronique<span class="fr-required-marker"> *</span></label><input class="fr-input" type="email" id="p-mail" value="alexandre.martin@anact.fr" required></div></div>
+          <div class="fr-fieldset__element"><div class="fr-input-group"><label class="fr-label" for="p-tel">Numéro de téléphone<span class="fr-required-marker"> *</span><span class="fr-hint-text">Format attendu : (+33) 5 36 49 68 27</span></label><input class="fr-input" type="tel" id="p-tel" value="04 72 82 50 00" required></div></div>
+        </fieldset>
+
+        <ul class="fr-btns-group fr-btns-group--right fr-btns-group--inline fr-mt-4w">
+          <li>
+            <button class="fr-btn fr-btn--secondary" type="button">Étape précédente</button>
+          </li>
+          <li>
+            <button class="fr-btn" type="button">Valider cette étape</button>
+          </li>
+        </ul>
+      </div>
+
+      <hr class="fr-hr fr-my-8w">
+
+      <!-- Étape 3 : Société (Anact - Validée) -->
+      <div class="fr-stepper fr-mb-3w">
+        <h2 class="fr-stepper__title">Société <span class="fr-stepper__state">Étape 3 sur 5</span></h2>
+        <div class="fr-stepper__steps" data-fr-current-step="3" data-fr-steps="5"></div>
+        <p class="fr-stepper__details"><span class="fr-text--bold">Étape suivante :</span> Message</p>
+      </div>
+
+      <div class="form-step">
+        <fieldset class="fr-fieldset">
+          <legend class="fr-fieldset__legend--regular fr-fieldset__legend">Votre structure</legend>
+          
+          <div class="fr-fieldset__element">
+            <div class="fr-grid-row fr-grid-row--gutters fr-grid-row--bottom">
+              <div class="fr-col-12 fr-col-md-8">
+                <div class="fr-input-group fr-mb-0">
+                  <label class="fr-label" for="siret-1">
+                    SIRET<span class="fr-required-marker"> *</span>
+                    <span class="fr-hint-text">14 chiffres. <a href="https://annuaire-entreprises.data.gouv.fr/" class="link link-underline" target="_blank">J'ai oublié le N°SIRET de mon entreprise.</a></span>
+                  </label>
+                  <input class="fr-input" type="text" id="siret-1" value="18003701200051" disabled>
+                </div>
+              </div>
+              <div class="fr-col-12 fr-col-md-4">
+                <button type="button" class="fr-btn fr-btn--sm fr-icon-pencil-line fr-btn--icon-left fr-btn--secondary">MODIFIER</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="fr-fieldset__element fr-mt-3w">
+            <div class="fr-input-group">
+              <label class="fr-label" for="rs-1">Raison sociale *</label>
+              <input class="fr-input" type="text" id="rs-1" value="AGENCE NATIONALE POUR L'AMELIORATION DES CONDITIONS DE TRAVAIL" disabled>
+            </div>
+          </div>
+
+          <div class="fr-fieldset__element">
+            <div class="fr-input-group">
+              <label class="fr-label" for="adr-1">Adresse *</label>
+              <input class="fr-input" type="text" id="adr-1" value="192 AVENUE THIERS" disabled>
+            </div>
+          </div>
+          <div class="fr-fieldset__element">
+            <div class="fr-input-group">
+              <label class="fr-label" for="comp-1">Complément d'adresse</label>
+              <input class="fr-input" type="text" id="comp-1" value="" disabled>
+            </div>
+          </div>
+
+          <div class="fr-fieldset__element">
+            <div class="fr-grid-row fr-grid-row--gutters">
+              <div class="fr-col-12 fr-col-md-6">
+                <div class="fr-input-group fr-mb-0">
+                  <label class="fr-label" for="cp-1">Code postal *</label>
+                  <input class="fr-input" type="text" id="cp-1" value="69006" disabled>
+                </div>
+              </div>
+              <div class="fr-col-12 fr-col-md-6">
+                <div class="fr-input-group fr-mb-0">
+                  <label class="fr-label" for="ville-1">Ville *</label>
+                  <input class="fr-input" type="text" id="ville-1" value="LYON" disabled>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="fr-fieldset__element fr-mt-3w">
+            <div class="fr-grid-row fr-grid-row--gutters">
+              <div class="fr-col-12 fr-col-md-6">
+                <div class="fr-input-group fr-mb-0">
+                  <label class="fr-label" for="reg-1">Région</label>
+                  <input class="fr-input" type="text" id="reg-1" value="AUVERGNE-RHONE-ALPES" disabled>
+                </div>
+              </div>
+              <div class="fr-col-12 fr-col-md-6">
+                <div class="fr-input-group fr-mb-0">
+                  <label class="fr-label" for="pays-1">Pays</label>
+                  <input class="fr-input" type="text" id="pays-1" value="France" disabled>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="fr-fieldset__element fr-mt-3w">
+            <div class="fr-grid-row fr-grid-row--gutters">
+              <div class="fr-col-12 fr-col-md-6">
+                <div class="fr-input-group fr-mb-0">
+                  <label class="fr-label" for="naf-1">Code NAF</label>
+                  <input class="fr-input" type="text" id="naf-1" value="8411Z (Administration publique générale)" disabled>
+                </div>
+              </div>
+              <div class="fr-col-12 fr-col-md-6">
+                <div class="fr-input-group fr-mb-0">
+                  <label class="fr-label" for="eff-1">Effectif</label>
+                  <input class="fr-input" type="text" id="eff-1" value="100 à 199 salariés" disabled>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="fr-fieldset__element fr-mt-3w">
+            <div class="fr-input-group">
+              <label class="fr-label" for="sect-1">Secteur d'activité</label>
+              <input class="fr-input" type="text" id="sect-1" value="Administration publique (tutelle) des activités économiques" disabled>
+            </div>
+          </div>
+
+        </fieldset>
+
+        <ul class="fr-btns-group fr-btns-group--right fr-btns-group--inline fr-mt-4w">
+          <li>
+            <button class="fr-btn fr-btn--secondary" type="button">Étape précédente</button>
+          </li>
+          <li>
+            <button class="fr-btn" type="button">Valider cette étape</button>
+          </li>
+        </ul>
+      </div>
+
+      <hr class="fr-hr fr-my-8w">
+
+      <!-- Étape 4 : Message -->
+      <div class="fr-stepper fr-mb-3w">
+        <h2 class="fr-stepper__title">Message <span class="fr-stepper__state">Étape 4 sur 5</span></h2>
+        <div class="fr-stepper__steps" data-fr-current-step="4" data-fr-steps="5"></div>
+        <p class="fr-stepper__details"><span class="fr-text--bold">Étape suivante :</span> Synthèse et validation</p>
+      </div>
+
+      <div class="form-step">
+        <fieldset class="fr-fieldset">
+          <legend class="fr-fieldset__legend--regular fr-fieldset__legend">Informations complémentaires</legend>
+          <div class="fr-fieldset__element">
+            <div class="fr-input-group">
+              <label class="fr-label" for="message-1">
+                Afin de vous accueillir dans des conditions optimales, merci de nous signaler ici toute situation spécifique : situation de handicap, régime alimentaire spécifique, allergies alimentaires ou autres besoins.<span class="fr-required-marker"> *</span>
+              </label>
+              <textarea class="fr-input" id="message-1" rows="4" required>Aucun besoin particulier.</textarea>
+            </div>
+          </div>
+        </fieldset>
+
+        <ul class="fr-btns-group fr-btns-group--right fr-btns-group--inline fr-mt-4w">
+          <li>
+            <button class="fr-btn fr-btn--secondary" type="button">Étape précédente</button>
+          </li>
+          <li>
+            <button class="fr-btn" type="button">Valider cette étape</button>
+          </li>
+        </ul>
+      </div>
+
+      <hr class="fr-hr fr-my-8w">
+
+      <!-- Étape 5 : Synthèse (Parcours 1) -->
+      <div class="fr-stepper fr-mb-3w">
+        <h2 class="fr-stepper__title">Synthèse et validation <span class="fr-stepper__state">Étape 5 sur 5</span></h2>
+        <div class="fr-stepper__steps" data-fr-current-step="5" data-fr-steps="5"></div>
+        <p class="fr-stepper__details"><span class="fr-text--bold">Fin du parcours</span></p>
+      </div>
+
+      <div class="form-step fr-mb-12w">
+        
+        <!-- Bloc Récapitulatif Participant -->
+        <div class="fr-card fr-mb-3w fr-p-3w" style="box-shadow: inset 0 0 0 1px #dddddd;">
+          <h4 class="fr-h6 fr-mb-2w">Participant</h4>
+          <p class="fr-text--sm fr-mb-3w">
+            Nom et prénom : <span class="fr-text--bold">Alexandre Martin</span><br>
+            Adresse électronique : <span class="fr-text--bold">alexandre.martin@anact.fr</span><br>
+            Fonction : <span class="fr-text--bold">Management</span>
+          </p>
+          <button type="button" class="fr-btn fr-btn--sm fr-icon-pencil-line fr-btn--icon-left fr-btn--secondary">MODIFIER</button>
+        </div>
+
+        <!-- Bloc Récapitulatif Société -->
+        <div class="fr-card fr-mb-3w fr-p-3w" style="box-shadow: inset 0 0 0 1px #dddddd;">
+          <h4 class="fr-h6 fr-mb-2w">Société</h4>
+          <p class="fr-text--sm fr-mb-3w">
+            SIRET : <span class="fr-text--bold">18003701200051</span><br>
+            Raison sociale : <span class="fr-text--bold">AGENCE NATIONALE POUR L'AMELIORATION DES CONDITIONS DE TRAVAIL</span><br>
+            Adresse complète : <span class="fr-text--bold">192 AVENUE THIERS, 69006 LYON, France</span>
+          </p>
+          <button type="button" class="fr-btn fr-btn--sm fr-icon-pencil-line fr-btn--icon-left fr-btn--secondary">MODIFIER</button>
+        </div>
+
+        <!-- Bloc Récapitulatif Message -->
+        <div class="fr-card fr-mb-4w fr-p-3w" style="box-shadow: inset 0 0 0 1px #dddddd;">
+          <h4 class="fr-h6 fr-mb-2w">Message</h4>
+          <p class="fr-text--sm fr-mb-3w">
+            Message : <span class="fr-text--bold">Aucun besoin particulier.</span>
+          </p>
+          <button type="button" class="fr-btn fr-btn--sm fr-icon-pencil-line fr-btn--icon-left fr-btn--secondary">MODIFIER</button>
+        </div>
+
+        <!-- Interrupteurs de consentement (désactivés par défaut) -->
+        <fieldset class="fr-fieldset" id="toggle-group-1" aria-labelledby="toggle-group-1-legend toggle-group-1-messages">
+          <legend class="fr-fieldset__legend" id="toggle-group-1-legend"> Consentements nécessaires à la bonne réalisation du service </legend>
+          <div class="fr-fieldset__element">
+            <ul class="fr-toggle__list">
+              <li>
+                <div class="fr-toggle">
+                  <input type="checkbox" class="fr-toggle__input" id="toggle-p1-1" aria-describedby="toggle-p1-1-messages">
+                  <label class="fr-toggle__label" for="toggle-p1-1" data-fr-checked-label="Activé" data-fr-unchecked-label="Désactivé">J'ai lu et j'accepte les dispositions spécifiques à la vente de prestations de formation détaillées dans les conditions générales de vente de l'Anact. *</label>
+                  <div class="fr-messages-group" id="toggle-p1-1-messages" aria-live="polite"></div>
+                </div>
+              </li>
+              <li>
+                <div class="fr-toggle">
+                  <input type="checkbox" class="fr-toggle__input" id="toggle-p1-2" aria-describedby="toggle-p1-2-messages">
+                  <label class="fr-toggle__label" for="toggle-p1-2" data-fr-checked-label="Activé" data-fr-unchecked-label="Désactivé">J'ai pris connaissance du public cible et des prérequis exigés pour suivre la formation et je m'engage ou j'engage les personnes que j'inscris à remplir ces conditions. *</label>
+                  <div class="fr-messages-group" id="toggle-p1-2-messages" aria-live="polite"></div>
+                </div>
+              </li>
+              <li>
+                <div class="fr-toggle">
+                  <input type="checkbox" class="fr-toggle__input" id="toggle-p1-3" aria-describedby="toggle-p1-3-messages">
+                  <label class="fr-toggle__label" for="toggle-p1-3" data-fr-checked-label="Activé" data-fr-unchecked-label="Désactivé">J'ai conscience que les retards perturbent le bon déroulé pédagogique et je m'engage à être présent sur toute la durée de la formation et à respecter les horaires indiqués. J'en informe les personnes que j'inscris le cas échéant. *</label>
+                  <div class="fr-messages-group" id="toggle-p1-3-messages" aria-live="polite"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="fr-messages-group" id="toggle-group-1-messages" aria-live="polite"></div>
+        </fieldset>
+
+        <!-- Boutons de navigation finaux -->
+        <ul class="fr-btns-group fr-btns-group--right fr-btns-group--inline fr-mt-4w">
+          <li>
+            <button class="fr-btn fr-btn--secondary" type="button">Étape précédente</button>
+          </li>
+          <li>
+            <button class="fr-btn" type="button">Valider ma préinscription</button>
+          </li>
+        </ul>
+      </div>
+
+      <hr class="fr-hr fr-my-8w">
+
+
+      <!-- ======================================================= -->
+      <!-- PARCOURS 2 : L'USAGER EST RESPONSABLE (6 étapes)        -->
+      <!-- ======================================================= -->
+
+      <div class="fr-callout fr-mb-6w">
+        <h3 class="fr-callout__title">Parcours 2 : Je suis responsable de l'inscription</h3>
+        <p class="fr-callout__text"></p>
+      </div>
+
+      <!-- Étape 1 : Profil (Variante Responsable) -->
+      <div class="fr-stepper fr-mb-3w">
+        <h2 class="fr-stepper__title">Votre profil <span class="fr-stepper__state">Étape 1 sur 6</span></h2>
+        <div class="fr-stepper__steps" data-fr-current-step="1" data-fr-steps="6"></div>
+        <p class="fr-stepper__details"><span class="fr-text--bold">Étape suivante :</span> Responsable de l'inscription</p>
+      </div>
+
+      <div class="form-step">
+        <fieldset class="fr-fieldset">
+          <legend class="fr-fieldset__legend--regular fr-fieldset__legend">Vous êtes :</legend>
+          <div class="fr-fieldset__element">
+            <div class="fr-radio-group">
+              <input type="radio" id="p2-choice-1" name="p2-profile">
+              <label class="fr-label" for="p2-choice-1">Je participe à la formation</label>
+            </div>
+          </div>
+          <div class="fr-fieldset__element">
+            <div class="fr-radio-group">
+              <input type="radio" id="p2-choice-2" name="p2-profile" checked>
+              <label class="fr-label" for="p2-choice-2">Je suis responsable de l'inscription <span class="fr-hint-text">Signataire du bordereau de pré-inscription</span></label>
+            </div>
+          </div>
+        </fieldset>
+
+        <ul class="fr-btns-group fr-btns-group--right fr-btns-group--inline fr-mt-4w">
+          <li>
+            <button class="fr-btn" type="button">Valider cette étape</button>
+          </li>
+        </ul>
+      </div>
+
+      <hr class="fr-hr fr-my-8w">
+
+      <!-- Étape 2 : Responsable -->
+      <div class="fr-stepper fr-mb-3w">
+        <h2 class="fr-stepper__title">Responsable de l'inscription <span class="fr-stepper__state">Étape 2 sur 6</span></h2>
+        <div class="fr-stepper__steps" data-fr-current-step="2" data-fr-steps="6"></div>
+        <p class="fr-stepper__details"><span class="fr-text--bold">Étape suivante :</span> Participant(s)</p>
+      </div>
+
+      <div class="form-step">
+        <fieldset class="fr-fieldset">
+          <legend class="fr-fieldset__legend--regular fr-fieldset__legend">Informations du responsable signataire du bordereau de préinscription</legend>
+
+          <div class="fr-fieldset__element">
+            <fieldset class="fr-fieldset fr-fieldset--inline">
+              <legend class="fr-fieldset__legend fr-fieldset__legend--regular">Sexe du responsable<span class="fr-required-marker"> *</span></legend>
+              <div class="fr-fieldset__element fr-fieldset__element--inline"><div class="fr-radio-group"><input type="radio" id="s2-h" name="s2" checked><label class="fr-label" for="s2-h">Homme</label></div></div>
+              <div class="fr-fieldset__element fr-fieldset__element--inline"><div class="fr-radio-group"><input type="radio" id="s2-f" name="s2"><label class="fr-label" for="s2-f">Femme</label></div></div>
+            </fieldset>
+          </div>
+
+          <div class="fr-fieldset__element"><div class="fr-input-group"><label class="fr-label" for="r-nom">Nom du responsable<span class="fr-required-marker"> *</span></label><input class="fr-input" type="text" id="r-nom" value="Dubois" required></div></div>
+          <div class="fr-fieldset__element"><div class="fr-input-group"><label class="fr-label" for="r-prenom">Prénom du responsable<span class="fr-required-marker"> *</span></label><input class="fr-input" type="text" id="r-prenom" value="Camille" required></div></div>
+          <div class="fr-fieldset__element"><div class="fr-input-group"><label class="fr-label" for="r-mail">Adresse électronique du responsable<span class="fr-required-marker"> *</span></label><input class="fr-input" type="email" id="r-mail" value="camille.dubois@anact.fr" required></div></div>
+          <div class="fr-fieldset__element"><div class="fr-input-group"><label class="fr-label" for="r-tel">Numéro de téléphone du responsable<span class="fr-required-marker"> *</span><span class="fr-hint-text">Format attendu : (+33) 5 36 49 68 27</span></label><input class="fr-input" type="tel" id="r-tel" value="04 72 82 50 01" required></div></div>
+          
+          <div class="fr-fieldset__element">
+            <div class="fr-select-group">
+              <label class="fr-label" for="r-fonc">Fonction du responsable<span class="fr-required-marker"> *</span></label>
+              <select class="fr-select" id="r-fonc" required><option value="Management" selected>Management</option></select>
+            </div>
+          </div>
+        </fieldset>
+
+        <ul class="fr-btns-group fr-btns-group--right fr-btns-group--inline fr-mt-4w">
+          <li>
+            <button class="fr-btn fr-btn--secondary" type="button">Étape précédente</button>
+          </li>
+          <li>
+            <button class="fr-btn" type="button">Valider cette étape</button>
+          </li>
+        </ul>
+      </div>
+
+      <hr class="fr-hr fr-my-8w">
+
+      <!-- Étape 3 : Participant(s) avec ajout par adresse électronique et cartes individuelles -->
+      <div class="fr-stepper fr-mb-3w">
+        <h2 class="fr-stepper__title">Participant(s) <span class="fr-stepper__state">Étape 3 sur 6</span></h2>
+        <div class="fr-stepper__steps" data-fr-current-step="3" data-fr-steps="6"></div>
+        <p class="fr-stepper__details"><span class="fr-text--bold">Étape suivante :</span> Société</p>
+      </div>
+
+      <div class="form-step">
+        <fieldset class="fr-fieldset">
+          <legend class="fr-fieldset__legend--regular fr-fieldset__legend">Ajouter des participants</legend>
+
+          <!-- Champ de saisie adresse électronique + Bouton Ajouter -->
+          <div class="fr-fieldset__element">
+            <div class="fr-grid-row fr-grid-row--gutters fr-grid-row--bottom">
+              <div class="fr-col-12 fr-col-md-8">
+                <div class="fr-input-group fr-mb-0">
+                  <label class="fr-label" for="new-part-email">Saisir l'adresse électronique du participant à ajouter</label>
+                  <input class="fr-input" type="email" id="new-part-email" placeholder="nom@anact.fr">
+                </div>
+              </div>
+              <div class="fr-col-12 fr-col-md-4">
+                <button class="fr-btn" type="button" style="background-color: #000091; color: #fff; width: 100%;">AJOUTER</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Liste des participants ajoutés (sous forme de cartes individuelles) -->
+          <div class="fr-fieldset__element fr-mt-4w">
+            <h4 class="fr-h6 fr-mb-3w">Participants ajoutés (2)</h4>
+
+            <!-- Carte Participant 1 : Jean Dupont -->
+            <div class="fr-card fr-mb-3w fr-p-3w" style="box-shadow: inset 0 0 0 1px #dddddd;">
+              <h5 class="fr-h6 fr-mb-2w">Participant 1 : Jean Dupont</h5>
+              <p class="fr-text--sm fr-mb-3w">
+                Sexe : <span class="fr-text--bold">Homme</span><br>
+                Adresse électronique : <span class="fr-text--bold">jean.dupont@anact.fr</span><br>
+                Téléphone : <span class="fr-text--bold">04 72 82 50 12</span><br>
+                Fonction : <span class="fr-text--bold">Mandat</span>
+              </p>
+              <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+                <button type="button" class="fr-btn fr-btn--sm fr-icon-pencil-line fr-btn--icon-left fr-btn--secondary">Modifier</button>
+                <button type="button" class="fr-btn fr-btn--sm fr-icon-delete-bin-line fr-btn--icon-left fr-btn--secondary">Supprimer</button>
+              </div>
+            </div>
+
+            <!-- Carte Participant 2 : Sophie Laurent -->
+            <div class="fr-card fr-mb-3w fr-p-3w" style="box-shadow: inset 0 0 0 1px #dddddd;">
+              <h5 class="fr-h6 fr-mb-2w">Participant 2 : Sophie Laurent</h5>
+              <p class="fr-text--sm fr-mb-3w">
+                Sexe : <span class="fr-text--bold">Femme</span><br>
+                Adresse électronique : <span class="fr-text--bold">sophie.laurent@anact.fr</span><br>
+                Téléphone : <span class="fr-text--bold">04 72 82 50 15</span><br>
+                Fonction : <span class="fr-text--bold">Management</span>
+              </p>
+              <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+                <button type="button" class="fr-btn fr-btn--sm fr-icon-pencil-line fr-btn--icon-left fr-btn--secondary">Modifier</button>
+                <button type="button" class="fr-btn fr-btn--sm fr-icon-delete-bin-line fr-btn--icon-left fr-btn--secondary">Supprimer</button>
+              </div>
+            </div>
+
+          </div>
+
+        </fieldset>
+
+        <ul class="fr-btns-group fr-btns-group--right fr-btns-group--inline fr-mt-4w">
+          <li>
+            <button class="fr-btn fr-btn--secondary" type="button">Étape précédente</button>
+          </li>
+          <li>
+            <button class="fr-btn" type="button">Valider cette étape</button>
+          </li>
+        </ul>
+      </div>
+
+      <hr class="fr-hr fr-my-8w">
+
+      <!-- Étape 4 : Société (Anact - Validée) -->
+      <div class="fr-stepper fr-mb-3w">
+        <h2 class="fr-stepper__title">Société <span class="fr-stepper__state">Étape 4 sur 6</span></h2>
+        <div class="fr-stepper__steps" data-fr-current-step="4" data-fr-steps="6"></div>
+        <p class="fr-stepper__details"><span class="fr-text--bold">Étape suivante :</span> Message</p>
+      </div>
+
+      <div class="form-step">
+        <fieldset class="fr-fieldset">
+          <legend class="fr-fieldset__legend--regular fr-fieldset__legend">Votre structure</legend>
+          
+          <div class="fr-fieldset__element">
+            <div class="fr-grid-row fr-grid-row--gutters fr-grid-row--bottom">
+              <div class="fr-col-12 fr-col-md-8">
+                <div class="fr-input-group fr-mb-0">
+                  <label class="fr-label" for="siret-2">
+                    SIRET<span class="fr-required-marker"> *</span>
+                    <span class="fr-hint-text">14 chiffres. <a href="https://annuaire-entreprises.data.gouv.fr/" class="link link-underline" target="_blank">J'ai oublié le N°SIRET de mon entreprise.</a></span>
+                  </label>
+                  <input class="fr-input" type="text" id="siret-2" value="18003701200051" disabled>
+                </div>
+              </div>
+              <div class="fr-col-12 fr-col-md-4">
+                <button type="button" class="fr-btn fr-btn--sm fr-icon-pencil-line fr-btn--icon-left fr-btn--secondary">MODIFIER</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="fr-fieldset__element fr-mt-3w">
+            <div class="fr-input-group">
+              <label class="fr-label" for="rs-2">Raison sociale *</label>
+              <input class="fr-input" type="text" id="rs-2" value="AGENCE NATIONALE POUR L'AMELIORATION DES CONDITIONS DE TRAVAIL" disabled>
+            </div>
+          </div>
+
+          <div class="fr-fieldset__element">
+            <div class="fr-input-group">
+              <label class="fr-label" for="adr-2">Adresse *</label>
+              <input class="fr-input" type="text" id="adr-2" value="192 AVENUE THIERS" disabled>
+            </div>
+          </div>
+          <div class="fr-fieldset__element">
+            <div class="fr-input-group">
+              <label class="fr-label" for="comp-2">Complément d'adresse</label>
+              <input class="fr-input" type="text" id="comp-2" value="" disabled>
+            </div>
+          </div>
+
+          <div class="fr-fieldset__element">
+            <div class="fr-grid-row fr-grid-row--gutters">
+              <div class="fr-col-12 fr-col-md-6">
+                <div class="fr-input-group fr-mb-0">
+                  <label class="fr-label" for="cp-2">Code postal *</label>
+                  <input class="fr-input" type="text" id="cp-2" value="69006" disabled>
+                </div>
+              </div>
+              <div class="fr-col-12 fr-col-md-6">
+                <div class="fr-input-group fr-mb-0">
+                  <label class="fr-label" for="ville-2">Ville *</label>
+                  <input class="fr-input" type="text" id="ville-2" value="LYON" disabled>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="fr-fieldset__element fr-mt-3w">
+            <div class="fr-grid-row fr-grid-row--gutters">
+              <div class="fr-col-12 fr-col-md-6">
+                <div class="fr-input-group fr-mb-0">
+                  <label class="fr-label" for="reg-2">Région</label>
+                  <input class="fr-input" type="text" id="reg-2" value="AUVERGNE-RHONE-ALPES" disabled>
+                </div>
+              </div>
+              <div class="fr-col-12 fr-col-md-6">
+                <div class="fr-input-group fr-mb-0">
+                  <label class="fr-label" for="pays-2">Pays</label>
+                  <input class="fr-input" type="text" id="pays-2" value="France" disabled>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="fr-fieldset__element fr-mt-3w">
+            <div class="fr-grid-row fr-grid-row--gutters">
+              <div class="fr-col-12 fr-col-md-6">
+                <div class="fr-input-group fr-mb-0">
+                  <label class="fr-label" for="naf-2">Code NAF</label>
+                  <input class="fr-input" type="text" id="naf-2" value="8411Z (Administration publique générale)" disabled>
+                </div>
+              </div>
+              <div class="fr-col-12 fr-col-md-6">
+                <div class="fr-input-group fr-mb-0">
+                  <label class="fr-label" for="eff-2">Effectif</label>
+                  <input class="fr-input" type="text" id="eff-2" value="100 à 199 salariés" disabled>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="fr-fieldset__element fr-mt-3w">
+            <div class="fr-input-group">
+              <label class="fr-label" for="sect-2">Secteur d'activité</label>
+              <input class="fr-input" type="text" id="sect-2" value="Administration publique (tutelle) des activités économiques" disabled>
+            </div>
+          </div>
+
+        </fieldset>
+
+        <ul class="fr-btns-group fr-btns-group--right fr-btns-group--inline fr-mt-4w">
+          <li>
+            <button class="fr-btn fr-btn--secondary" type="button">Étape précédente</button>
+          </li>
+          <li>
+            <button class="fr-btn" type="button">Valider cette étape</button>
+          </li>
+        </ul>
+      </div>
+
+      <hr class="fr-hr fr-my-8w">
+
+      <!-- Étape 5 : Message -->
+      <div class="fr-stepper fr-mb-3w">
+        <h2 class="fr-stepper__title">Message <span class="fr-stepper__state">Étape 5 sur 6</span></h2>
+        <div class="fr-stepper__steps" data-fr-current-step="5" data-fr-steps="6"></div>
+        <p class="fr-stepper__details"><span class="fr-text--bold">Étape suivante :</span> Synthèse</p>
+      </div>
+
+      <div class="form-step">
+        <fieldset class="fr-fieldset">
+          <legend class="fr-fieldset__legend--regular fr-fieldset__legend">Informations complémentaires</legend>
+          <div class="fr-fieldset__element">
+            <div class="fr-input-group">
+              <label class="fr-label" for="message-2">
+                Afin de vous accueillir dans des conditions optimales, merci de nous signaler ici toute situation spécifique : situation de handicap, régime alimentaire spécifique, allergies alimentaires ou autres besoins.<span class="fr-required-marker"> *</span>
+              </label>
+              <textarea class="fr-input" id="message-2" rows="4" required>Aucun besoin particulier.</textarea>
+            </div>
+          </div>
+        </fieldset>
+
+        <ul class="fr-btns-group fr-btns-group--right fr-btns-group--inline fr-mt-4w">
+          <li>
+            <button class="fr-btn fr-btn--secondary" type="button">Étape précédente</button>
+          </li>
+          <li>
+            <button class="fr-btn" type="button">Valider cette étape</button>
+          </li>
+        </ul>
+      </div>
+
+      <hr class="fr-hr fr-my-8w">
+
+      <!-- Étape 6 : Synthèse (Parcours 2) -->
+      <div class="fr-stepper fr-mb-3w">
+        <h2 class="fr-stepper__title">Synthèse <span class="fr-stepper__state">Étape 6 sur 6</span></h2>
+        <div class="fr-stepper__steps" data-fr-current-step="6" data-fr-steps="6"></div>
+        <p class="fr-stepper__details"><span class="fr-text--bold">Fin du parcours</span></p>
+      </div>
+
+      <div class="form-step">
+        
+        <!-- Bloc Récapitulatif Responsable -->
+        <div class="fr-card fr-mb-3w fr-p-3w" style="box-shadow: inset 0 0 0 1px #dddddd;">
+          <h4 class="fr-h6 fr-mb-2w">Responsable</h4>
+          <p class="fr-text--sm fr-mb-3w">
+            Nom et prénom : <span class="fr-text--bold">Camille Dubois</span><br>
+            Adresse électronique : <span class="fr-text--bold">camille.dubois@anact.fr</span><br>
+            Téléphone : <span class="fr-text--bold">04 72 82 50 01</span><br>
+            Fonction : <span class="fr-text--bold">Management</span>
+          </p>
+          <button type="button" class="fr-btn fr-btn--sm fr-icon-pencil-line fr-btn--icon-left fr-btn--secondary">MODIFIER</button>
+        </div>
+
+        <!-- Bloc Récapitulatif Participant 1 -->
+        <div class="fr-card fr-mb-3w fr-p-3w" style="box-shadow: inset 0 0 0 1px #dddddd;">
+          <h4 class="fr-h6 fr-mb-2w">Participant 1</h4>
+          <p class="fr-text--sm fr-mb-3w">
+            Nom et prénom : <span class="fr-text--bold">Jean Dupont</span><br>
+            Adresse électronique : <span class="fr-text--bold">jean.dupont@anact.fr</span><br>
+            Téléphone : <span class="fr-text--bold">04 72 82 50 12</span><br>
+            Fonction : <span class="fr-text--bold">Mandat</span>
+          </p>
+          <button type="button" class="fr-btn fr-btn--sm fr-icon-pencil-line fr-btn--icon-left fr-btn--secondary">MODIFIER</button>
+        </div>
+
+        <!-- Bloc Récapitulatif Participant 2 -->
+        <div class="fr-card fr-mb-3w fr-p-3w" style="box-shadow: inset 0 0 0 1px #dddddd;">
+          <h4 class="fr-h6 fr-mb-2w">Participant 2</h4>
+          <p class="fr-text--sm fr-mb-3w">
+            Nom et prénom : <span class="fr-text--bold">Sophie Laurent</span><br>
+            Adresse électronique : <span class="fr-text--bold">sophie.laurent@anact.fr</span><br>
+            Téléphone : <span class="fr-text--bold">04 72 82 50 15</span><br>
+            Fonction : <span class="fr-text--bold">Management</span>
+          </p>
+          <button type="button" class="fr-btn fr-btn--sm fr-icon-pencil-line fr-btn--icon-left fr-btn--secondary">MODIFIER</button>
+        </div>
+
+        <!-- Bloc Récapitulatif Société -->
+        <div class="fr-card fr-mb-3w fr-p-3w" style="box-shadow: inset 0 0 0 1px #dddddd;">
+          <h4 class="fr-h6 fr-mb-2w">Société</h4>
+          <p class="fr-text--sm fr-mb-3w">
+            SIRET : <span class="fr-text--bold">18003701200051</span><br>
+            Raison sociale : <span class="fr-text--bold">AGENCE NATIONALE POUR L'AMELIORATION DES CONDITIONS DE TRAVAIL</span><br>
+            Adresse complète : <span class="fr-text--bold">192 AVENUE THIERS, 69006 LYON, France</span>
+          </p>
+          <button type="button" class="fr-btn fr-btn--sm fr-icon-pencil-line fr-btn--icon-left fr-btn--secondary">MODIFIER</button>
+        </div>
+
+        <!-- Bloc Récapitulatif Message -->
+        <div class="fr-card fr-mb-4w fr-p-3w" style="box-shadow: inset 0 0 0 1px #dddddd;">
+          <h4 class="fr-h6 fr-mb-2w">Message</h4>
+          <p class="fr-text--sm fr-mb-3w">
+            Message : <span class="fr-text--bold">Aucun besoin particulier.</span>
+          </p>
+          <button type="button" class="fr-btn fr-btn--sm fr-icon-pencil-line fr-btn--icon-left fr-btn--secondary">MODIFIER</button>
+        </div>
+
+        <!-- Interrupteurs de consentement (désactivés par défaut) -->
+        <fieldset class="fr-fieldset" id="toggle-group-2" aria-labelledby="toggle-group-2-legend toggle-group-2-messages">
+          <legend class="fr-fieldset__legend" id="toggle-group-2-legend"> Consentements nécessaires à la bonne réalisation du service </legend>
+          <div class="fr-fieldset__element">
+            <ul class="fr-toggle__list">
+              <li>
+                <div class="fr-toggle">
+                  <input type="checkbox" class="fr-toggle__input" id="toggle-p2-1" aria-describedby="toggle-p2-1-messages">
+                  <label class="fr-toggle__label" for="toggle-p2-1" data-fr-checked-label="Activé" data-fr-unchecked-label="Désactivé">J'ai lu et j'accepte les dispositions spécifiques à la vente de prestations de formation détaillées dans les conditions générales de vente de l'Anact. *</label>
+                  <div class="fr-messages-group" id="toggle-p2-1-messages" aria-live="polite"></div>
+                </div>
+              </li>
+              <li>
+                <div class="fr-toggle">
+                  <input type="checkbox" class="fr-toggle__input" id="toggle-p2-2" aria-describedby="toggle-p2-2-messages">
+                  <label class="fr-toggle__label" for="toggle-p2-2" data-fr-checked-label="Activé" data-fr-unchecked-label="Désactivé">J'ai pris connaissance du public cible et des prérequis exigés pour suivre la formation et je m'engage ou j'engage les personnes que j'inscris à remplir ces conditions. *</label>
+                  <div class="fr-messages-group" id="toggle-p2-2-messages" aria-live="polite"></div>
+                </div>
+              </li>
+              <li>
+                <div class="fr-toggle">
+                  <input type="checkbox" class="fr-toggle__input" id="toggle-p2-3" aria-describedby="toggle-p2-3-messages">
+                  <label class="fr-toggle__label" for="toggle-p2-3" data-fr-checked-label="Activé" data-fr-unchecked-label="Désactivé">J'ai conscience que les retards perturbent le bon déroulé pédagogique et je m'engage à être présent sur toute la durée de la formation et à respecter les horaires indiqués. J'en informe les personnes que j'inscris le cas échéant. *</label>
+                  <div class="fr-messages-group" id="toggle-p2-3-messages" aria-live="polite"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="fr-messages-group" id="toggle-group-2-messages" aria-live="polite"></div>
+        </fieldset>
+
+        <!-- Boutons de navigation finaux -->
+        <ul class="fr-btns-group fr-btns-group--right fr-btns-group--inline fr-mt-4w">
+          <li>
+            <button class="fr-btn fr-btn--secondary" type="button">Étape précédente</button>
+          </li>
+          <li>
+            <button class="fr-btn" type="button">Envoyer ma demande</button>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</main>
+    <script src='https://main--ds-gouv.netlify.app/dist/dsfr.nomodule.min.js'></script>
+  </body>
+  
+</html>
